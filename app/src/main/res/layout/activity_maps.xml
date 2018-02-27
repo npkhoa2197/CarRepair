@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vn.apcs.cs426.a1551016_miniproject.MapsActivity">
+
+
+    <vn.apcs.cs426.a1551016_miniproject.MapWrapperLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapWrapper">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"/>
+
+    </vn.apcs.cs426.a1551016_miniproject.MapWrapperLayout>
+
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:layout_gravity="center|bottom"
+        android:text="FIND NEARBY CAR REPAIR SHOPS"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:background="#000000"
+        android:id="@+id/buttonFindNearby"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tourButton"
+        android:visibility="invisible"
+        android:layout_gravity="top|right"/>
+</FrameLayout>
